@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Email Verified</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f5f7fa;
+    }
+    .container {
+      text-align: center;
+      padding: 2rem;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 90%;
+    }
+    h1 { color: #0070f3; }
+    p { color: #555; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>✅ Email Verified!</h1>
+    <p id="msg">Your email has been confirmed.</p>
+    <p>You can now log in to the application.</p>
+    <script>
+      // 可选：自动关闭窗口（适合桌面应用）
+      setTimeout(() => {
+        if (window.opener) window.close();
+      }, 5000);
+    </script>
+  </div>
+</body>
+</html>
