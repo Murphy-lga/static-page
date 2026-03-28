@@ -196,7 +196,7 @@ if(error){
 
 if(!error && type!=="recovery"){
 
- showMessage("无效的密码重置链接。",true);
+ showMessage("无效的密码重置链接，请重新申请重置密码。",true);
 
  disableForm();
 
@@ -222,7 +222,7 @@ if(!error && type==="recovery" && !accessToken){
 
  if(!session){
 
-  showMessage("登录会话已失效，请重新点击邮件中的重置链接。",true);
+  showMessage("登录会话已失效，请重新申请重置密码。",true);
 
   disableForm();
 
